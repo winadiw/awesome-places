@@ -15,7 +15,7 @@ if (__DEV__) {
 }
 
 const configureStore = () => {
-    return createStore(rootReducer, composeEnhancers)
+    return createStore(rootReducer, composeEnhancers())
 }
 
 export default configureStore;
